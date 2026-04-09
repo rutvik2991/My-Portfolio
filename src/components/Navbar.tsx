@@ -46,7 +46,7 @@ const Navbar = () => {
           RH
         </a>
         <a
-          href="https://www.linkedin.com/in/rutvikharipara13452306/"
+          href="https://www.linkedin.com/in/rutvik-haripara-81425320b/"
           className="navbar-connect"
           data-cursor="disable"
           target="_blank"

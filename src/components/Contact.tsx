@@ -11,7 +11,7 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/rutvikharipara13452306/"
+                href="https://www.linkedin.com/in/rutvik-haripara-81425320b/"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
@@ -28,7 +28,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://www.linkedin.com/in/rutvikharipara13452306/"
+              href="https://www.linkedin.com/in/rutvik-haripara-81425320b/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
