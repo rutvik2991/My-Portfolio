@@ -21,8 +21,7 @@ const Contact = () => {
             </p>
             <h4>Education</h4>
             <p>
-              B.Tech Information &amp; Communication Technology, Marwadi
-              University, Rajkot — 2022
+              B.Tech Information &amp; Communication Technology, Marwadi University, Rajkot — 2022
             </p>
           </div>
           <div className="contact-box">
