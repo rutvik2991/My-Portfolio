@@ -46,7 +46,7 @@ const Career = () => {
             <div className="career-info-in">
               <div className="career-role">
                 <h4>B.Tech ICT</h4>
-                <h5>Atmiya University · Rajkot</h5>
+                <h5>Marwadi University · Rajkot</h5>
               </div>
               <h3>2022</h3>
             </div>
