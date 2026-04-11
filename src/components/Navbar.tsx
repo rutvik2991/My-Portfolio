@@ -10,12 +10,13 @@ export let smoother: ScrollSmoother;
 
 const Navbar = () => {
   useEffect(() => {
+    const isTouchDevice = ScrollTrigger.isTouch > 0;
     smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
-      smooth: 1.7,
-      speed: 1.7,
-      effects: true,
+      smooth: isTouchDevice ? 0 : 1.7,
+      speed: isTouchDevice ? 1 : 1.7,
+      effects: !isTouchDevice,
       autoResize: true,
       ignoreMobileResize: true,
     });
@@ -35,9 +36,15 @@ const Navbar = () => {
         }
       });
     });
-    window.addEventListener("resize", () => {
+    const resizeHandler = () => {
       ScrollSmoother.refresh(true);
-    });
+    };
+    window.addEventListener("resize", resizeHandler);
+
+    return () => {
+      window.removeEventListener("resize", resizeHandler);
+      smoother?.kill();
+    };
   }, []);
   return (
     <>

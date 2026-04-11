@@ -1,6 +1,16 @@
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { setAllTimeline } from "./utils/GsapScroll";
 import "./styles/Career.css";
 
 const Career = () => {
+  useEffect(() => {
+    setAllTimeline();
+    return () => {
+      ScrollTrigger.getById("career-timeline")?.kill();
+    };
+  }, []);
+
   return (
     <div className="career-section section-container">
       <div className="career-container">
