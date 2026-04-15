@@ -5,32 +5,25 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Squad Platform",
+    title: "moonstride CRM system",
     category: "Full-Stack Web Application",
     tools: "Node.js, React.js, MongoDB, REST APIs",
     image: `${import.meta.env.BASE_URL}images/project1.png`,
-    link: "#",
-  },
-  {
-    title: "E-Commerce Portal",
-    category: "Online Shopping Platform",
-    tools: "Next.js, Node.js, MySQL, Payment Gateway Integration",
-    image: `${import.meta.env.BASE_URL}images/project2.png`,
-    link: "#",
+    link: "https://www.moonstride.com/",
   },
   {
     title: "Airline Management",
     category: "Travel & Ticketing System",
     tools: "Node.js, MSSQL, REST APIs, Inventory Management",
-    image: `${import.meta.env.BASE_URL}images/project3.png`,
-    link: "#",
+    image: `${import.meta.env.BASE_URL}images/project2.png`,
+    link: "https://www.mytourplanner.in",
   },
   {
-    title: "CRM Dashboard",
-    category: "Customer Relationship Management",
+    title: "Crypto Currency Exchange",
+    category: "Crypto coin exchange Block Chain",
     tools: "React.js, Node.js, MongoDB, API Integrations",
-    image: `${import.meta.env.BASE_URL}images/project4.png`,
-    link: "#",
+    image: `${import.meta.env.BASE_URL}images/project3.png`,
+    link: "https://beta.doru.co/",
   },
 ];
 
@@ -71,7 +64,7 @@ const Work = () => {
           {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"
-            onClick={goToPrev}
+            onClick={(e) => { goToPrev(); (e.currentTarget as HTMLButtonElement).blur(); }}
             aria-label="Previous project"
             data-cursor="disable"
           >
@@ -79,7 +72,7 @@ const Work = () => {
           </button>
           <button
             className="carousel-arrow carousel-arrow-right"
-            onClick={goToNext}
+            onClick={(e) => { goToNext(); (e.currentTarget as HTMLButtonElement).blur(); }}
             aria-label="Next project"
             data-cursor="disable"
           >
@@ -132,7 +125,7 @@ const Work = () => {
                 key={index}
                 className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
                   }`}
-                onClick={() => goToSlide(index)}
+                onClick={(e) => { goToSlide(index); (e.currentTarget as HTMLButtonElement).blur(); }}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"
               />
