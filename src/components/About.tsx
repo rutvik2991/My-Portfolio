@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Web developer with 3.9 years of experience at Squad Technology,
+          Web developer with 4 years of experience at Squad Technology,
           specializing in Node.js and React.js. Successfully led teams to deliver
           five major projects, enhancing system functionality through API
           integrations. Strong project management skills, delivering efficient,
